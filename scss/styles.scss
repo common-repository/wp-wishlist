@@ -1,0 +1,60 @@
+/**
+ * Frontend Styles
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+
+$brand-color: #229a3d;
+$loader-size: 5em;
+
+$check-color: $brand-color;
+$spinner-color: $brand-color;
+
+$drop-zone-color: #dc5709;
+$drop-zone-hover-color: #0087bb;
+$drag-border-color: lighten( $drop-zone-color, 25% );
+
+body {
+  &.has_rox_pop {
+    overflow: hidden;
+  }
+}
+.wishlist,
+.wishlist *,
+[class*="rox_wishlist"],
+[class*="rox_wishlist"] *,
+[class*="rox-wishlist"],
+[class*="rox-wishlist"] * {
+  box-sizing: border-box;
+}
+@import "pertials/icons";
+@import "pertials/buttons";
+@import "pertials/archive";
+@import "pertials/single";
+@import "pertials/alerts";
+@import "pertials/list_popup";
+@import "pertials/pagination";
+@import "pertials/loading_animation";
+@import "pertials/clearfix";
+
+@media screen and (max-width: 445px) {
+  .wishlist-single .list-actions .button {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .wishlist-single .list-actions .button + .button {
+    margin-left: 5px;
+  }
+  .rox_wishlist_pop .rox_pop_container.wishlist-editor {
+    width: calc( 100% - 30px );
+  }
+  .rox_pop_container.wishlist-editor .pop_contents {
+    height: auto;
+    max-height: none;
+  }
+}
+@media screen and (max-width: 365px) {
+  .wishlist-single .list-actions .button {
+    padding: .3em .53em;
+  }
+}

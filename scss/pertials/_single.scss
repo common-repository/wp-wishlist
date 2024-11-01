@@ -1,0 +1,164 @@
+
+.wishlist-single {
+
+
+  .list-section {
+    h2 {
+      margin-bottom: 50px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 12px;
+      font-weight: 500;
+      color: #666;
+    }
+  }
+
+  .list-item {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    + .list-item {
+      padding-top: 25px;
+      margin-top: 25px;
+      border-top: 1px solid #eee;
+    }
+    .item-thumb {
+      float: left;
+      width: 20%;
+      padding-right: 25px;
+      img {
+        display: inline-block;
+      }
+    }
+    .list-contents {
+      float: left;
+      width: 80%;
+      margin-bottom:25px;
+      .item-name{
+        margin-top: 0;
+        margin-bottom: 5px;
+        a{
+          font-weight: 500;
+          color: #666;
+        }
+      }
+    }
+    .item-actions {
+      a {
+        + a {
+          margin-left: 10px;
+        }
+      }
+    }
+    &:last-child{
+      margin-bottom: 20px;
+    }
+  }
+
+  .list-cover {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .list-author {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    img {
+      width: 90px;
+      height: auto;
+    }
+  }
+  .item-desc {
+    overflow: hidden;
+    .wp-post-image {
+      margin-left: initial;
+    }
+    .in-stock{
+      color: #ff0000;
+    }
+    .rox-product-price,
+    .stock,
+    .wishlist-item-rating {
+      .star-rating{
+        margin-top: 5px;
+        height: 1.5em;
+        line-height: 2;
+        span{
+          &:before{
+            color: #f2b01e;
+          }
+        }
+      }
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    p{
+      margin-bottom: 17px;
+    }
+  }
+
+
+  .list-actions {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 25px;
+    text-align: right;
+    .button {
+      position: relative;
+      display: inline-block;
+      + .button {
+        margin-left: 10px;
+      }
+      span.rox-wpwl-icon {
+        width: 18px;
+        height: 18px;
+        margin: 0 10px 0 0;
+        top: 3px;
+      }
+      &.list-status span.rox-wpwl-icon {
+        margin: 0;
+      }
+    }
+    div.button {
+      cursor: default;
+    }
+    a {
+      + a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .item-name {
+    width: 100%;
+  }
+  figure.thumb{
+    img{
+      width: 100%;
+    }
+  }
+
+}
+.comments-area{
+  #reply-title{
+    font-weight: 500;
+  }
+  #respond{
+    form{
+      label{
+        margin-bottom: 6px;
+      }
+      textarea{
+        &:focus{
+          box-shadow:none;
+          border: 1px solid #21759b;
+          outline: none;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+{
+    "name": "pluginrox/wp-wishlist",
+    "description": "The Ultimate Wishlist/Bookmark Plugin for WordPress.",
+    "authors": [
+        {
+            "name": "PluginRox",
+            "email": "info@pluginrox.com"
+        }
+    ],
+    "require": {
+        "hashids/hashids": "^3.0"
+    }
+}

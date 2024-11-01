@@ -1,0 +1,391 @@
+/**
+ * Admin Styles
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+.rox-admin-wrap * {
+  box-sizing: border-box;
+}
+
+.rox_wpwl_items {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.rox_wpwl_items * {
+  box-sizing: border-box;
+}
+.rox_wpwl_items a.add-item,
+.rox_wpwl_items .wishlist_color {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.rox_wpwl_items .wishlist_color {
+  height: 25px;
+  padding-top: 5px;
+}
+.rox_wpwl_items .wishlist_color > label {
+  margin-top: 4px;
+}
+.rox_wpwl_items a.add-item {
+  text-decoration: none;
+  color: #000;
+  float: left;
+  padding: 5px 7px;
+  line-height: 15px;
+  font-weight: bold;
+}
+.rox_wpwl_items a.add-item .dashicons {
+  top: -2px;
+  position: relative;
+}
+.rox_wpwl_items .wishlist_color {
+  float: right;
+}
+.rox_wpwl_items .wishlist_color label,
+.rox_wpwl_items .wishlist_color .wp-picker-container {
+  display: inline-block;
+}
+.rox_wpwl_items .wishlist-items li .item-group {
+  position: relative;
+  display: block;
+  width: calc( 100% - 31px );
+  margin: 0 auto 0 31px;
+  padding: 10px 5px;
+  background: #e3f1f6;
+}
+.rox_wpwl_items .wishlist-items li .item-group .group-half,
+.rox_wpwl_items .wishlist-items li .item-group .group {
+  display: inline-block;
+  margin-top: 5px;
+}
+.rox_wpwl_items .wishlist-items li .item-group .group {
+  width: 100%;
+}
+.rox_wpwl_items .wishlist-items li .item-group .group-half {
+  width: calc( 50% - 7px );
+  margin-right: 10px;
+}
+.rox_wpwl_items .wishlist-items li .item-group label {
+  margin-left: 3px;
+}
+.rox_wpwl_items .wishlist-items li .item-group input,
+.rox_wpwl_items .wishlist-items li .item-group textarea,
+.rox_wpwl_items .wishlist-items li .item-group select {
+  width: 100%;
+  border-radius: 3px;
+}
+.rox_wpwl_items .wishlist-items li .item-group .help {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 5px;
+}
+.rox_wpwl_items .wishlist-items li .item-group .help code {
+  font-size: inherit;
+}
+.rox_wpwl_items .wishlist-items li .item-group .help b, .rox_wpwl_items .wishlist-items li .item-group .help strong {
+  font-weight: 900;
+}
+
+.share_list span.dashicons {
+  position: relative;
+  top: 5px;
+  font-size: 15px;
+}
+
+.rox-admin-wrap .wishlist_button_style input[type="radio"] {
+  margin-top: 4px;
+}
+.rox-admin-wrap .wishlist_button_style span.rox-wpwl-icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 1px auto;
+}
+.rox-admin-wrap .wishlist_button_style span.rox-wpwl-icon svg {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+.rox-admin-wrap .wishlist_button_style span.rox-wpwl-icon.icon-heart svg {
+  fill: #ab1616;
+}
+
+.wrap.plugin-rox .page-title img {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: auto;
+}
+
+body.dragging, body.dragging * {
+  cursor: move;
+}
+
+ol.wishlist-items {
+  margin: 0 0 9px 0;
+  min-height: 10px;
+}
+ol.wishlist-items li {
+  position: relative;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #CCC;
+}
+ol.wishlist-items li a.move-item, ol.wishlist-items li a.edit-item, ol.wishlist-items li a.remove-item, ol.wishlist-items li a.undo-delete {
+  text-decoration: none;
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  padding: 3px;
+  text-align: center;
+  background: #CCC;
+  color: #000;
+  margin: 0;
+  left: 5px;
+  top: 5px;
+}
+ol.wishlist-items li a.move-item:hover, ol.wishlist-items li a.edit-item:hover, ol.wishlist-items li a.remove-item:hover, ol.wishlist-items li a.undo-delete:hover {
+  background: #a6a6a6;
+}
+ol.wishlist-items li a.remove-item {
+  top: 36px;
+}
+ol.wishlist-items li a.edit-item {
+  display: none;
+}
+ol.wishlist-items li a.undo-delete {
+  display: none;
+}
+ol.wishlist-items li.deleted {
+  border: 1px solid red;
+}
+ol.wishlist-items li.deleted a.undo-delete {
+  display: block;
+}
+ol.wishlist-items li.deleted a.edit-item, ol.wishlist-items li.deleted a.move-item, ol.wishlist-items li.deleted a.remove-item {
+  display: none;
+}
+ol.wishlist-items li.placeholder {
+  position: relative;
+  margin: 5px;
+  padding: 28px 5px;
+  border: 3px dashed #dc5709;
+  background: #fccfb5;
+  color: #fee9dc;
+}
+ol.wishlist-items li.placeholder:after {
+  position: absolute;
+  top: 4px;
+  width: 100%;
+  padding: 15px 5px;
+  text-align: center;
+  content: "DROP";
+}
+ol.wishlist-items li.placeholder:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 50%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-left-color: #dc5709;
+  border-right: none;
+}
+ol.wishlist-items li.placeholder:hover {
+  border: 3px dashed #0087bb;
+  background: #55d0ff;
+  color: #b1e9ff;
+}
+ol.wishlist-items li.placeholder:hover:before {
+  border-left-color: #0087bb;
+}
+ol.wishlist-items li.dragged {
+  position: absolute;
+  border: 1px solid #f9a06c;
+  top: 0;
+  opacity: 0.85;
+  z-index: 2000;
+}
+
+.rox-admin-wrap .iris-picker,
+.wishlist_color .iris-picker {
+  position: absolute;
+  right: 0;
+  box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+.rox-admin-wrap .wp-picker-container {
+  position: relative;
+}
+.rox-admin-wrap .wp-picker-container .iris-picker {
+  left: 0;
+}
+
+.rox-admin-wrap {
+  position: relative;
+}
+
+/**
+ * Loader Animation
+ * @see https://codepen.io/mhk/pen/xmPBYp
+ */
+.roxLoaderContainer {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.roxLoader {
+  /* position: relative; */
+  position: absolute;
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.5em;
+  margin-left: -2.5em;
+  vertical-align: top;
+  /* margin-bottom: $loader-size/2; */
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #125a7c;
+  border-radius: 50%;
+  -webkit-animation: rox-loader-spin 1.2s linear 0s infinite;
+  animation: rox-loader-spin 1.2s linear 0s infinite;
+  z-index: 9999999;
+}
+.roxLoader.complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: #125a7c;
+  transition: border 500ms ease-out;
+}
+.roxLoader .checkmark {
+  display: none;
+}
+.roxLoader .checkmark:after {
+  opacity: 1;
+  height: 2.5em;
+  width: 1.25em;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 3px solid #125a7c;
+  border-top: 3px solid #125a7c;
+  content: '';
+  left: 0.85em;
+  top: 2.5em;
+  position: absolute;
+  -webkit-animation: rox-checkmark 900ms ease 0s 1;
+  animation: rox-checkmark 900ms ease 0s 1;
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+}
+.roxLoader.complete .checkmark {
+  display: block;
+}
+
+@-webkit-keyframes rox-loader-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rox-loader-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rox-checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 1.25em;
+    opacity: 1;
+  }
+  40% {
+    height: 2.5em;
+    width: 1.25em;
+    opacity: 1;
+  }
+  100% {
+    height: 2.5em;
+    width: 1.25em;
+    opacity: 1;
+  }
+}
+@keyframes rox-checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 1.25em;
+    opacity: 1;
+  }
+  40% {
+    height: 2.5em;
+    width: 1.25em;
+    opacity: 1;
+  }
+  100% {
+    height: 2.5em;
+    width: 1.25em;
+    opacity: 1;
+  }
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */

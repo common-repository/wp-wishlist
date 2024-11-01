@@ -1,0 +1,206 @@
+.rox-wishlist-button {
+  .rox {
+    &-wpwl-icon {
+      width: 25px;
+      height: 25px;
+      position: relative;
+      display: block;
+      text-align: center;
+      margin: 1px auto;
+      svg {
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+      }
+    }
+  }
+  &:hover {
+    .rox-wpwl-icon {
+      &.icon-heart {
+        svg {
+          fill: #e62222;
+        }
+      }
+    }
+  }
+  &.button {
+    &.style-1 {
+      padding: 6px 12px;
+      display: inline-block;
+      background: #21759b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: all .3s linear;
+      font-weight: 500;
+      font-smoothing: antialiased;
+      margin-bottom: 10px;
+      &:hover {
+        background: #0a4763;
+        color: #fff;
+      }
+    }
+    &.style-2,
+    &.style-3 {
+      position: relative;
+      padding: 4px 22px;
+      display: inline-block;
+      background: #21759b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all .3s linear;
+      svg{
+        fill:#fff;
+      }
+      &:hover{
+        background: #0a4763;
+        color: #fff;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        line-height: inherit;
+        font-size: inherit;
+      }
+      @at-root .woocommerce {
+        .rox-wishlist-button {
+          &.button {
+            &.style-2,
+            &.style-3 {
+              background: #21759b;
+              transition: all .3s linear;
+              font-size: 100%;
+              margin: 0;
+              line-height: 1;
+              cursor: pointer;
+              position: relative;
+              text-decoration: none;
+              overflow: visible;
+              padding: .618em 1em;
+              border-radius: 4px;
+              left: auto;
+              color: #515151;
+              border: 0;
+              display: inline-block;
+              background-image: none;
+              box-shadow: none;
+              text-shadow: none;
+              &:focus {
+                outline: none;
+              }
+              &:hover{
+                background: #0a4763;
+              }
+            }
+          }
+        }
+        .entry-summary {
+          .rox-wishlist-button {
+            &.button {
+              &.style-2,
+              &.style-3 {
+                margin-left: 3px;
+              }
+            }
+          }
+        }
+      }
+      .rox-wpwl-icon {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+      }
+    }
+  }
+}
+.list-actions {
+  .button {
+    padding: 6px 12px;
+    color: #21759b;
+    display: inline-block;
+    background: #21759b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    webkit-transition:all .3s linear;
+    transition:all .3s linear;
+    -webkit-font-smoothing: antialiased;
+    .rox-wpwl-icon svg{
+      fill: #fff;
+    }
+    &:hover{
+      background: #0a4763;
+    }
+
+  }
+}
+.item-actions{
+  .button {
+    padding: 6px 12px;
+    display: inline-block;
+    background: #21759b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    .rox-wpwl-icon svg {
+      fill: #fff;
+    }
+    &:hover {
+      background: #0a4763;
+    }
+    &:visited,&:hover,&:focus,&:active {
+      color: #fff;
+    }
+  }
+  .added_to_cart{
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: .618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    left: auto;
+    color: #515151;
+    background-color: #ebe9eb;
+    border: 0;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    &:visited,&:hover,&:focus,&:active {
+      color: #515151;
+    }
+  }
+}
+.rox-pop-actions{
+  .button {
+    display: inline-block;
+    background: #21759b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    &:hover {
+      background: #0a4763;
+    }
+  }
+}

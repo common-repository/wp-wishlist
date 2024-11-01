@@ -1,0 +1,30 @@
+
+// <p class="rox-alert rox-error">Message</p>
+// <p class="rox-alert rox-success">Message</p>
+.rox-alert {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 15px;
+  &.rox {
+    &-info {
+      color: #2796c7;
+      background: lighten( #2796c7, 50);
+    }
+    &-success {
+      color: #2ca247;
+      background: lighten( #2ca247, 50);
+    }
+    &-error {
+      color: #e02e21;
+      background: lighten( #e02e21, 40);
+    }
+  }
+}
+
+.wishlist-archive {
+  > .rox-alert {
+
+  }
+}

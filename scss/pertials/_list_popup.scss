@@ -1,0 +1,270 @@
+.rox_wishlist_pop {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+  .back_drop {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba( #000, .4);
+    z-index: -1;
+  }
+  .rox_pop_container {
+    position: absolute;
+    display: none;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    &.wishlist-editor {
+      width: 600px;
+      padding: 30px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+  }
+}
+.rox_pop_container {
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .pop-header {
+    padding: 6px 0px;
+    border-bottom: 1px solid #ededed;
+  }
+  .pop-title {
+    margin-bottom: 6px;
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .pop-footer {
+    .pop-new-list {
+      position: relative;
+      display: block;
+      a {
+        position: relative;
+        font-size: 13px;
+        display: inline-block;
+        background: #21759b;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+        webkit-transition: all .3s linear;
+        transition: all .3s linear;
+        font-weight: 500;
+        -webkit-font-smoothing: antialiased;
+        padding: 6px 12px;
+        svg{
+          fill:#fff;
+        }
+        &:hover {
+          background: #0a4763;
+        }
+      }
+    }
+  }
+  .pop_contents {
+    padding: 20px 0;
+    overflow-y: scroll;
+    .list-name{
+      margin-bottom: 1px;
+    }
+    .list-privacy{
+      margin-bottom: 10px;
+    }
+  }
+  &.wishlist-editor {
+    padding: 20px;
+    .pop_contents {
+      height: auto;
+      max-height: none;
+    }
+  }
+  li {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 6px auto;
+    label {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      span {
+        position: relative;
+        display: inline-block;
+      }
+      .list {
+        &-name {
+          float: left;
+          width: 75%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          font-size: 12px;
+          input[type=checkbox] {
+            position: relative;
+            font-size: 31px;
+            margin-right: 3px;
+            top: 0px;
+            margin-left: 0;
+          }
+        }
+        &-extra {
+          float: right;
+          overflow: hidden;
+          height: 18px;
+          > span {
+            img, svg {
+              width: 18px;
+            }
+          }
+        }
+      }
+      span.icon, span.author {
+
+      }
+    }
+  }
+  .pop-footer {
+    .icon-add-new-list {
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+/**
+ * Rox PopUp Forms
+ */
+.rox-pop-form {
+  .button {
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+  > div {
+    position: relative;
+    label {
+      margin-bottom: 4px;
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+    }
+    input[type="text"], select, textarea {
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      background: transparent;
+      box-shadow: none;
+      padding: 5px 6px 5px 0;
+      margin-bottom: 6px;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 1px solid #ddd;
+      appearance: none;
+      outline: none;
+
+    }
+    textarea {
+      height: 200px;
+    }
+    select {
+      background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+      background-position: calc(100% - 17px) calc(1em + 0.2px), calc(100% - 13px) calc(1em + 0.2px), calc(100% - 2.5em) 0.5em;
+      background-size: 5px 5px, 5px 6px, 1px 1.5em;
+      background-repeat: no-repeat;
+    }
+  }
+  span.character-counter {
+    font-size: 10px;
+    display: block;
+    text-align: right;
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+  }
+  .list-name{
+    margin-bottom: 23px;
+    input{
+      &:focus{
+        border-bottom:1px solid #21759b;
+      }
+    }
+  }
+  .list-privacy{
+    margin-bottom: 23px;
+  }
+}
+.rox-pop-form {
+  &.edit-list {
+    > div {
+      position: relative;
+      label {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+      input[type="text"], select, textarea {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 5px 10px;
+        &:focus{
+          border: 1px solid #21759b;
+        }
+      }
+    }
+  }
+}
+/**
+ * Action Buttons
+ */
+.rox-pop-actions {
+  .button {
+    padding: 8px 15px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+.pop-footer {
+  .rox-pop-form {
+    position: relative;
+    display: none;
+  }
+}
+.pop-info {
+  position: absolute;
+  display: none;
+  background: rgba( #000, 0.73 );
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 25px;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  .info-contents {
+    background: #FFF;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    top: 6%;
+  }
+}

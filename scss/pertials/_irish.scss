@@ -1,0 +1,20 @@
+.rox-admin-wrap,
+.wishlist_color {
+	.iris-picker {
+		position: absolute;
+		right: 0;
+		box-shadow: 2px 3px 10px -1px rgba(0, 0, 0, 0.3);
+		z-index: 9;
+		@at-root {
+			.rox-admin-wrap .wp-picker-container {
+				position: relative;
+				.iris-picker {
+					left: 0;
+				}
+			}
+		}
+	}
+}
+.rox-admin-wrap {
+	position: relative;
+}

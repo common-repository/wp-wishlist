@@ -1,0 +1,152 @@
+/**
+ * Admin Styles
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+
+$brand-color: #125a7c;
+$loader-size: 5em;
+
+$check-color: $brand-color;
+$spinner-color: $brand-color;
+
+$drop-zone-color: #dc5709;
+$drop-zone-hover-color: #0087bb;
+$drag-border-color: lighten( $drop-zone-color, 25% );
+
+.rox-admin-wrap {
+	* { box-sizing: border-box; }
+}
+.rox_wpwl_items {
+	* { box-sizing: border-box; }
+	position: relative;
+	display: block;
+	width: 100%;
+	a.add-item,
+	.wishlist_color {
+		position: relative;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.wishlist_color {
+		height: 25px;
+		padding-top: 5px;
+		> label {
+			margin-top: 4px;
+		}
+	}
+	a.add-item {
+		text-decoration: none;
+		color: #000;
+		float: left;
+		padding: 5px 7px;
+		line-height: 15px;
+		font-weight: bold;
+		.dashicons {
+			top: -2px;
+			position: relative;
+		}
+	}
+	.wishlist_color {
+		float: right;
+		label,
+		.wp-picker-container {
+			display: inline-block;
+		}
+	}
+	.wishlist-items {
+		li {
+			.item-group {
+				position: relative;
+				display: block;
+				width: calc( 100% - 31px );
+				margin: 0 auto 0 31px;
+				padding: 10px 5px;
+				background: #e3f1f6;
+				.group-half,
+				.group {
+					display: inline-block;
+					margin-top: 5px;
+				}
+				.group {
+					width: 100%;
+				}
+				.group-half {
+					width: calc( 50% - 7px );
+					margin-right: 10px;
+				}
+				label {
+					margin-left: 3px;
+				}
+				input,
+				textarea,
+				select {
+					width: 100%;
+					border-radius: 3px;
+				}
+				.help {
+					position: relative;
+					display: block;
+					width: 100%;
+					font-size:12px;
+					text-align: right;
+					margin-top: 5px;
+					code {
+						font-size: inherit;
+					}
+					b, strong {
+						font-weight: 900;
+					}
+				}
+			}
+		}
+	}
+}
+.share_list {
+	span.dashicons {
+		position: relative;
+		top: 5px;
+		font-size: 15px;
+	}
+}
+.rox-admin-wrap .wishlist_button_style {
+	input[type="radio"] {
+		margin-top: 4px;
+	}
+	span.rox-wpwl-icon {
+		width: 25px;
+		height: 25px;
+		position: relative;
+		display: block;
+		text-align: center;
+		margin: 1px auto;
+		svg {
+			width: 100%;
+			height: 100%;
+			padding: 2px;
+		}
+		&.icon-heart {
+			svg {
+				fill: #ab1616;
+			}
+		}
+	}
+}
+.wrap {
+	&.plugin-rox {
+		.page-title {
+			img {
+				position: relative;
+				display: block;
+				width: 260px;
+				height: auto;
+			}
+		}
+	}
+}
+@import "pertials/sortable";
+@import "pertials/irish";
+@import "pertials/loading_animation";
+@import "pertials/clearfix";
+//@import "pertials/icons";
+//@import "pertials/switch";

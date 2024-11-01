@@ -1,0 +1,95 @@
+
+body.dragging, body.dragging * { cursor: move; }
+ol.wishlist-items {
+	margin: 0 0 9px 0;
+	min-height: 10px;
+	li {
+		position: relative;
+		display: block;
+		margin: 5px;
+		padding: 5px;
+		border: 1px solid #CCC;
+		a {
+			&.move-item,
+			&.edit-item,
+			&.remove-item,
+			&.undo-delete {
+				text-decoration: none;
+				position: absolute;
+				height: 26px;
+				width: 26px;
+				padding: 3px;
+				text-align: center;
+				background: #CCC;
+				color: #000;
+				margin: 0;
+				left: 5px;
+				top: 5px;
+				&:hover {
+					background: darken( #CCC, 15% );
+				}
+			}
+			&.move-item {}
+			&.remove-item {
+				top: 36px;
+			}
+			&.edit-item { display: none; }
+			//&.edit-item { top: 36px; }
+			//&.remove-item { top: 67px; }
+			&.undo-delete {
+				display: none;
+			}
+		}
+		&.deleted {
+			border: 1px solid red;
+			a {
+				&.undo-delete {
+					display: block;
+				}
+				&.edit-item,
+				&.move-item,
+				&.remove-item {
+					display: none;
+				}
+			}
+		}
+		&.placeholder {
+			position: relative;
+			margin: 5px; padding: 28px 5px;
+			border: 3px dashed $drop-zone-color;
+			background: lighten( $drop-zone-color, 40% );
+			color: lighten( $drop-zone-color, 48% );
+			&:after {
+				position: absolute;
+				top: 4px; width: 100%;
+				padding: 15px 5px; text-align: center;
+				content: "DROP";
+			}
+			&:before {
+				position: absolute;
+				content: "";
+				width: 0; height: 0;
+				left: -15px; top: 50%;
+				margin-top: -10px;
+				border: 10px solid transparent;
+				border-left-color: $drop-zone-color;
+				border-right: none;
+			}
+			&:hover {
+				border: 3px dashed $drop-zone-hover-color;
+				background: lighten( $drop-zone-hover-color, 30% );
+				color: lighten( $drop-zone-hover-color, 48% );
+				&:before {
+					border-left-color: $drop-zone-hover-color;
+				}
+			}
+		}
+		&.dragged {
+			position: absolute;
+			border: 1px solid $drag-border-color;
+			top: 0;
+			opacity: 0.85;
+			z-index: 2000;
+		}
+	}
+}
